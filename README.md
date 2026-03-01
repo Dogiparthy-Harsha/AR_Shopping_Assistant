@@ -2,7 +2,7 @@
 
 > Point your camera at any product, say **"I want this"**, and get instant results from eBay and Amazon — all through a sleek AR interface with glassmorphism UI.
 
-https://github.com/user-attachments/assets/demo.mp4
+
 
 ## ✨ Features
 
