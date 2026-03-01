@@ -1,0 +1,33 @@
+{
+    "mcpServers": {
+        "research-agent": {
+            "command": "python3",
+            "args": [
+                "mcp_servers/research_server.py"
+            ],
+            "env": {
+                "RESEARCH_AGENT_API_KEY": "${RESEARCH_AGENT_API_KEY}",
+                "SERPER_API_KEY": "${SERPER_API_KEY}"
+            }
+        },
+        "ebay-search": {
+            "command": "python3",
+            "args": [
+                "mcp_servers/ebay_server.py"
+            ],
+            "env": {
+                "EBAY_CLIENT_ID": "${EBAY_CLIENT_ID}",
+                "EBAY_CLIENT_SECRET": "${EBAY_CLIENT_SECRET}"
+            }
+        },
+        "amazon-search": {
+            "command": "python3",
+            "args": [
+                "mcp_servers/amazon_server.py"
+            ],
+            "env": {
+                "RAINFOREST_API_KEY": "${RAINFOREST_API_KEY}"
+            }
+        }
+    }
+}
