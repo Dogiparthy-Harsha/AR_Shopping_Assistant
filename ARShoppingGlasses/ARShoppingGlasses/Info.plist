@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Meta Wearables Device Access Toolkit Configuration -->
+	<key>MetaAppID</key>
+	<string>1667496367994514</string>
+	<key>ClientToken</key>
+	<string>AR|1667496367994514|39bb8d5f556c6dcd20cf20c07432219c</string>
+	<key>AppLinkURLScheme</key>
+	<string>wb1667496367994514</string>
+
+	<!-- URL Schemes for Meta AI app callback -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wb1667496367994514</string>
+			</array>
+		</dict>
+	</array>
+
+	<!-- Queried URL Schemes (to check if Meta AI app is installed) -->
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>meta-ai</string>
+	</array>
+
+	<!-- Privacy Permissions -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>CartLog AI needs microphone access for voice commands like "Hey Cart" and "I want this".</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>CartLog AI uses speech recognition to understand your voice commands for hands-free shopping.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>CartLog AI uses the camera through your Meta glasses to identify products.</string>
+
+	<!-- App Transport Security (allow localhost for local backend) -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
